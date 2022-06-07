@@ -1,4 +1,5 @@
 @props(['label', 'error' => null])
+
 <div {{ $attributes }} x-data x-id="['input']">
     <label x-bind:for="$id('input')" for="first-name" class="block text-sm font-medium text-gray-700">{{ $label }}</label>
     {{ $slot }}
