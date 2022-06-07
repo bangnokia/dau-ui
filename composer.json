@@ -1,0 +1,28 @@
+{
+    "name": "bangnokia/dau-ui",
+    "description": "Laravel blade UI component using AlpineJS, Tailwind CSS",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "BangNokia\\DauUi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nguyen Viet",
+            "email": "bangnokia@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^9.16",
+        "illuminate/view": "^9.16"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BangNokia\\DauUi\\ServiceProvider"
+            ]
+        }
+    }
+}
