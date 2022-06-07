@@ -13,8 +13,6 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
 
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'dau-ui');
-
-        Blade::anonymousComponentNamespace(__DIR__.'/../resources/components', 'd');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'd');
     }
 }
