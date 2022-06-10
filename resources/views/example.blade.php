@@ -50,5 +50,9 @@
             ]" selected="r"/>
         </x-d::form-group>
 
+        <div class="flex items-center">
+            Toggle <x-d::toggle />
+        </div>
+
     </form>
 </div>
