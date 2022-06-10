@@ -42,7 +42,12 @@
         </x-d::form-group>
 
         <x-d::form-group label="Radio group">
-            <x-d::radio-group class="flex gap-2" name="programing_language" :options="['PHP', 'Javascript', 'Rust', 'Laravel']" />
+            <x-d::radio-group class="flex gap-2" name="programing_language" :options="[
+                'laravel' => 'Laravel',
+                'sym' => 'Symfony',
+                'r' => 'Rust',
+                'tw' => 'Tailwind CSS'
+            ]" selected="r"/>
         </x-d::form-group>
 
     </form>

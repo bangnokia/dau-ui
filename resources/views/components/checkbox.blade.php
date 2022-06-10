@@ -1,5 +1,6 @@
 @props(['label' => null])
-<div class="inline-flex items-center"
+
+<div {{ $attributes->class('inline-flex items-center') }}
      @if ($label) x-data x-id="['checkbox']" @endif>
     <input type="checkbox"
            x-bind:id="$id('checkbox')"
