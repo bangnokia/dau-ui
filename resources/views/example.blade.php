@@ -50,7 +50,7 @@
             ]" selected="r"/>
         </x-d::form-group>
 
-        <div class="flex items-center">
+        <div class="flex items-center gap-2">
             Toggle <x-d::toggle />
         </div>
 
