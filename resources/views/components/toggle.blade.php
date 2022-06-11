@@ -1,4 +1,5 @@
 @props(['checked' => false])
+
 <label
     type="button"
     class="relative w-12 px-1 py-1 inline-flex rounded-full transition"
