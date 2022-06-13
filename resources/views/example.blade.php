@@ -32,6 +32,16 @@
             </div>
         </x-d::form-group>
 
+
+        <x-d::form-group label="Dropdown">
+            <div class="flex justify-evenly">
+                <x-d::dropdown />
+
+                <x-d::dropdown align="right" />
+            </div>
+        </x-d::form-group>
+
+
         <x-d::form-group label="Radio">
             <div class="flex gap-4">
                 <x-d::radio label="PHP" name="program-language"/>
@@ -52,6 +62,11 @@
 
         <x-d::form-group label="Toggle">
             <x-d::toggle />
+        </x-d::form-group>
+
+        <x-d::form-group label="Buttons">
+            <x-d::main-button>Main button</x-d::main-button>
+            <x-d::button>Button</x-d::button>
         </x-d::form-group>
 
     </form>

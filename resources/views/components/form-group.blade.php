@@ -5,7 +5,7 @@
 >
     @if ($label)
         <label x-bind:for="$id('input')"
-               class="mb-1 block text-sm font-medium text-gray-700">{{ $label }}</label>
+               class="mb-1.5 block text-sm font-medium text-gray-700">{{ $label }}</label>
     @endif
     {{ $slot }}
     @if ($error)
