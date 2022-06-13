@@ -1,13 +1,18 @@
 @props(['checked' => false])
 
-<label
-    type="button"
-    class="relative w-12 px-1 py-1 inline-flex rounded-full transition cursor-pointer"
-    x-data="{checked: @js($checked)}"
-    x-bind:class="checked ? 'bg-main-600' : 'bg-gray-200'"
->
-    <input type="checkbox" class="hidden peer" x-model="checked">
-    <span
-        class="w-5 h-5 rounded-full transition bg-white translate-x-0 peer-checked:translate-x-5"
-        aria-hidden="true"></span>
-</label>
+<div x-data="{id: $id('toggle'), checked: @js($checked)}">
+    <button
+        type="button"
+        class="group relative w-12 px-1 py-1 inline-flex rounded-full transition cursor-pointer
+        focus:outline-none focus:ring-2 focus:ring-main-500"
+        x-bind:class="checked ? 'bg-main-600' : 'bg-gray-200'"
+        x-on:click="checked = !checked"
+    >
+
+    <span class="w-5 h-5 rounded-full transition bg-white"
+          x-bind:class="checked ? 'translate-x-5' : 'translate-x-0'"
+          aria-hidden="true"></span>
+    </button>
+
+    <input type="checkbox" class="hidden" x-model="checked" x-bind:id="id">
+</div>

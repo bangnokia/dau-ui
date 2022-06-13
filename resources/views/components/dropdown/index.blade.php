@@ -20,7 +20,7 @@
     >
         <div
              @class([
-                "absolute top-1 p-1 w-56 text-sm border border-gray-300 rounded z-40 bg-white",
+                "absolute top-1 p-1 w-56 text-sm border border-gray-300 rounded-md z-40 bg-white",
                 'right-0' => $align === 'right',
                 'left-0' => $align === 'left',
             ])
