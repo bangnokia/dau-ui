@@ -2,7 +2,7 @@
 
 <label
     type="button"
-    class="relative w-12 px-1 py-1 inline-flex rounded-full transition"
+    class="relative w-12 px-1 py-1 inline-flex rounded-full transition cursor-pointer"
     x-data="{checked: @js($checked)}"
     x-bind:class="checked ? 'bg-main-600' : 'bg-gray-200'"
 >
