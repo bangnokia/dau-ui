@@ -1,6 +1,6 @@
 <div class="mx-auto bg-white flex items-center justify-center">
     <form class="w-[500px] p-6 flex flex-col gap-6">
-        <x-d::form-group label="Name" error="Your name is soooooooo weak">
+        <x-d::form-group label="Name" error="Your name is so weak">
             <x-d::input/>
         </x-d::form-group>
 
