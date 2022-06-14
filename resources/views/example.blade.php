@@ -66,7 +66,9 @@
 
         <x-d::form-group label="Buttons">
             <x-d::main-button>Main button</x-d::main-button>
+            <x-d::main-button disabled>Main button</x-d::main-button>
             <x-d::button>Button</x-d::button>
+            <x-d::button disabled>Button</x-d::button>
         </x-d::form-group>
 
     </form>
